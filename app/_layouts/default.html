@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-au">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+    <!-- No need to defined them here, browser knows where to look -->
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans">
+    
+    <!-- build:css({app,.tmp}) /css/site.css -->
+    <!--<link rel="stylesheet" href="/_bower_components/normalize-css/normalize.css">-->
+    <link rel="stylesheet" href="/css/site.css">
+    <!-- endbuild -->
+
+    <!-- HTML5 shim, for IE 6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="header">
+      <h1>Psn <span>Matter</span></h1>
+      <h2>measurement &amp; mapping</h2>
+    </div>
+
+    <div class="nav">
+      <a href="/company">Company</a>
+      <a href="/services">Services</a>
+      <a href="/technologies">Technologies</a>
+      <a href="/contact">Contact</a>
+    </div>
+
+    <div class="content">
+      {{ content }}
+    </div>
+
+    <footer>
+      <p>&copy; 2014 PSN Matter. &nbsp; Ph +61 2 9956 6003. &nbsp; <a href="mailto:info@matter.com.au">info@matter.com.au</a></p>
+    </footer>
+
+    {% include scripts.html %}
+    {% include analytics.html %}
+
+  </body>
+</html>
