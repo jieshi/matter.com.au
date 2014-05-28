@@ -1,0 +1,88 @@
+/* Make HTML 5 elements display block-level for consistent styling */
+header, nav, article, footer, address {
+	display: block;
+}
+* {
+	box-sizing: border-box;
+	&:before,
+	&:after {
+		box-sizing: border-box;
+	}
+}
+
+body {
+	background: #1f1f1f;
+	color: #fff;
+	font-family: 'PT Sans',Tahoma,Arial,Verdana,Helvetica,serif;
+	padding: 0;
+	margin: 0 auto;
+	width: 830px;
+}
+a {
+	color: white;
+	text-decoration: none;
+	&:hover {
+		color: #e5035d;
+		border-bottom: 1px solid #e5035d;
+	}
+}
+p {
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.header {
+	padding: 50px 0;
+	text-align: center;
+	margin: 0 auto;
+	width: 830px;
+	h1 {
+		font-size: 60px;
+		line-height: 50px;
+		margin: 0;
+		padding: 0;
+		span {
+			color: #e5035d;
+		}
+	}
+	h2 {
+		font-size: 25px;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.nav {
+	text-align: center;
+	margin-bottom: 30px;
+	a {
+		display: inline-block;
+		padding: 0 10px 5px 10px;
+		font-size: 25px;
+		border-bottom: 1px solid #1f1f1f;
+		&:hover {
+			border-bottom: 1px solid #e5035d;
+		}
+	}
+}
+
+.content {
+	h1 {
+		border-bottom: 3px solid #999;
+	}
+	h2 {
+		margin-top: 60px;
+		border-bottom: 3px solid #999;
+		display: inline-block;
+	}
+}
+
+footer {
+	color: #fff;
+	text-align: center;
+	margin-top: 30px;
+	padding-bottom: 20px;
+	p {
+		font-size: 16px;
+	}
+}
